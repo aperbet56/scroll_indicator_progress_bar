@@ -1,0 +1,107 @@
+/**** Reset ****/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**** Variables CSS ****/
+
+:root {
+    --dark: #091e42;
+    --blue: #1f3bd8;
+    --white: #fdfdfd;
+    --transition: all 0.2s linear;
+    --gradient: linear-gradient(90deg,
+            rgba(0, 239, 255, 1) 0%,
+            rgba(112, 23, 210, 1) 35%,
+            rgba(203, 3, 32, 1) 75%,
+            rgba(255, 126, 0, 1) 100%);
+}
+
+/**** html ****/
+
+html {
+    font-size: 10px;
+}
+
+/**** body ****/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: var(--white);
+    color: var(--dark);
+    display: flex;
+    flex-direction: column;
+}
+
+/**** div scroll indicator ****/
+
+#scroll-indicator {
+    position: fixed;
+    top: 0;
+    background: var(--gradient);
+    height: 5px;
+    border-radius: 5px;
+    width: 0%;
+    transition: var(--transition);
+}
+
+/**** header ****/
+header {
+    padding: 0 15px;
+}
+
+/**** h1 ****/
+
+h1 {
+    font-size: 32px;
+    margin: 30px 0;
+    text-align: center;
+    font-weight: 800;
+}
+
+/**** main ****/
+
+.main__content {
+    width: 80%;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+/**** section ****/
+
+.section {
+    margin: 20px 0;
+}
+
+/**** h2 ****/
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/**** p ****/
+
+p {
+    font-size: 18px;
+}
+
+/**** footer ****/
+
+footer {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    text-align: center;
+}
