@@ -17,4 +17,4 @@ Lien vers le projet :
 - Page web responsive
 - Desktop first
 - JavaScript
-- Code JavaScript commentéS
+- Code JavaScript commenté
