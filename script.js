@@ -2,9 +2,14 @@
 const handleScrollIndicator = () => {
   // Récupération de la div ayant la classe "scroll-indicator"
   const scrollIndicator = document.querySelector("#scroll-indicator");
+
+  // scrollHeight est une mesure de la hauteur du contenu d'un élément qui inclut le contenu débordant et non visible à l'écran. La valeur scrollHeight est égale à la hauteur minimum dont l'élément aurait besoin pour que le contenu rentre dans le viewpoint sans utiliser de barre de défilement.
+
+  // window.innerHeight récupère la hauteur (en pixels) de la partie visible de la fenêtre de navigation en incluant, si elle est affichée, la barre de défilement horizontale.
   const maxHeight = document.body.scrollHeight - window.innerHeight;
   // console.log(maxHeight);
 
+  // window.scrollY retourne le nombre de pixels la page actuellement défilés verticalement.
   const widthPercentage = (window.scrollY / maxHeight) * 100;
   // console.log(widthPercentage);
 
